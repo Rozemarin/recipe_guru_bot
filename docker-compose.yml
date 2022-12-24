@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  bot:
+    build: .
+    restart: always
+networks:
+  default:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.16.57.0/24
